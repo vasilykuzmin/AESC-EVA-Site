@@ -10,26 +10,39 @@
     </title>
 
     <link rel="stylesheet" type="text/css" href="{% static '/admin/css/base.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+    
 </head>
 <body>
-    <div style="background-image: url('{% static 'logo.png' %}');">
-        <div style="float:left">
-            <a href="{% url 'index' %}">
-                <img src="{% static 'logo.png' %}" height=100>
-            </a>
+    <header>
+        <div class="container">
+            <div style="background-image: url('{% static 'logo.png' %}');">
+                <div style="float:left">
+                    <a href="{% url 'index' %}">
+                        <img src="{% static 'logo.png' %}" height=100>
+                    </a>
+                </div>
+                <div style="float: right;">
+                    <a href="{% url 'index' %}">
+                        ABOBA1
+                    </a>
+                    <a href="{% url 'index' %}">
+                        ABOBA2
+                    </a>
+                </div>
+                <hr>
+            </div>
         </div>
-        <div style="float: right;">
-            <a href="{% url 'index' %}">
-                ABOBA1
-            </a>
-            <a href="{% url 'index' %}">
-                ABOBA2
-            </a>
-        </div>
-        <hr>
-    </div>
-
+    </header>
+    <div class="container">
     {% block content %}
     
     {% endblock content %}
+    </div>
+    <footer>
+        <div class="container">
+            <hr>
+            ABOBA
+        </div>
+    </footer>
 </body>
