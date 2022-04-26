@@ -9,14 +9,25 @@
         {% endblock title %}
     </title>
 
-
+    <link rel="stylesheet" type="text/css" href="{% static '/admin/css/base.css' %}">
 </head>
 <body>
-    <a href="{% url 'index' %}">
-        <img src="{% static 'logo.png' %}" height=100>
-    </a>
-
-    <hr>
+    <div style="background-image: url('{% static 'logo.png' %}');">
+        <div style="float:left">
+            <a href="{% url 'index' %}">
+                <img src="{% static 'logo.png' %}" height=100>
+            </a>
+        </div>
+        <div style="float: right;">
+            <a href="{% url 'index' %}">
+                ABOBA1
+            </a>
+            <a href="{% url 'index' %}">
+                ABOBA2
+            </a>
+        </div>
+        <hr>
+    </div>
 
     {% block content %}
     
