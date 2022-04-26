@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block title %}Posters{% endblock title %}
+
+{% block content %}
+{% load static %}
+    <div style = "text-align: center;">
+        <font size = 7 face="Comic Sans MS">
+            Мотивирующие плакаты
+        </font>
+    </div>
+    <div style="margin-top:20px;">
+        <font size = 5 face="Comic Sans MS">
+            Здесь представлены постеры, которые вы можете показать вашим друзьям или знакомым. Предполагается, что эти постеры
+            повлияют на них и они перестанут использовать плохие слова в своей речи.
+        </font>
+    </div>
+
+    <div style="margin-top:80px">
+        <div style="display: table; margin: auto">
+            <div style="float: left; margin-right:80px;">
+                <img src="{% static 'kolhoz.jpg' %}" width="400">
+            </div>
+            <div style="float: right;">
+                <img src="{% static 'samolet.jpg' %}" width="400">
+            </div>
+        </div>
+    </div>
+
+    <div style="margin-top:80px">
+        <div style="display: table; margin: auto">
+            <div style="float: left; margin-right:80px;">
+                <img src="{% static 'logo.png' %}" width="400">
+            </div>
+            <div style="float: right;">
+                <img src="{% static 'yazik.jpg' %}" width="400">
+            </div>
+        </div>
+    </div>
+    <div style="margin-top:80px">
+        <div style="display: table; margin: auto">
+            <div>
+                <img src="{% static 'traktor.jpg' %}" width="880">
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}

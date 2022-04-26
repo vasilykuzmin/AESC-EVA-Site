@@ -1,8 +1,53 @@
 {% extends 'base.html' %}
 
-{% block title %}Index{% endblock title %}
+{% block title %}Main{% endblock title %}
 
 {% block content %}
-    Hello world!
-    <img src="https://media.giphy.com/media/S99cgkURVO62qemEKM/giphy.gif">
+{% load static %}
+
+    <div style = "text-align: center;">
+        <font size = 7 face="Comic Sans MS">
+            Запрещенные слова с общении и создании контента
+        </font>
+    </div>
+
+    <div style="margin-top:40px">
+    <div style="display: table; margin: auto">
+        <div style="float: left; width: 70%;">
+            <font size = 5 face="Comic Sans MS">
+                <div>
+                    В наше тяжелое время дети начинают ругаться матом с пеленок. Как показали последние исследования, у ребят в возрасте 1-3 лет матерные слова составляют до 84.7% словарного запаса. Этот показатель неуклонно растет до момента, когда человек достигает 30 лет. Дальше в бой вступает возрастная деменция.
+                </div>
+                <div style="margin-top: 40px">
+                    Кроме того, что ругательства делают нашу речь некрасивой, они еще и сужают диапазон выражаемых нами эмоций. Более того, в культурном обществе, как правило, не приемлют людей, любящих выражаться крепкими словами.
+                </div>
+            </font>
+        </div>
+        <div style="float: right;">
+            <img src="{% static 'kolhoz.jpg' %}" width="300">
+        </div>
+    </div>
+    </div>
+
+    <div style="margin-top:20px">
+    <div style="display: table; margin: auto">
+        <div style="float: left;">
+            <img src="{% static 'yazik.jpg' %}" width="300">
+        </div>
+        <div style="float: right; width: 70%;">
+            <font size = 5 face="Comic Sans MS">
+                <div>
+                    В 2022 году проблема нехватки культурных кадров коснулась и Ивановского Сунце-Погорельского Научно-исследовательского Института Дружбы Хлебобулочных Изделий(ИСПНИИДХИ). И вот мы, последние из джедаев, решили предотвратить мировую катастрофу. Для этого было решено создать сайт.
+                </div>
+                <div style="margin-top: 40px">
+                    После того, как вы дадите честное слово не использовать мат даже в мыслях, можно перейти к навигации по сайту.
+                </div>
+                <div style="margin-top: 40px">
+                    В кнопках в шапке все написано.
+                </div>
+            </font>
+        </div>
+    </div>
+    </div>
+
 {% endblock content %}
