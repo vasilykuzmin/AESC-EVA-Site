@@ -16,13 +16,13 @@
 <body>
     <header>
         <div class="container">
-            <div style="background-image: url('{% static 'logo.png' %}');">
-                <div style="float:left">
+            <div style="background: url('{% static 'background.jpg' %}') no-repeat; background-size: 100%; height: 230px;" height=230>
+                <div style="float:left; margin: 45px 10px;">
                     <a href="{% url 'index' %}">
-                        <img src="{% static 'logo.png' %}" height=100>
+                        <img src="{% static 'logo.png' %}" height=130>
                     </a>
                 </div>
-                <div style="float: right; margin: 10px; display: flex; gap: 10px">
+                <div style="float: right; margin: 10px; display: flex; gap: 10px; font-size: 20px;">
                     <a class="button" href="{% url 'index' %}">
                         ABOBA1
                     </a>
@@ -30,8 +30,8 @@
                         ABOBA2
                     </a>
                 </div>
-                <hr>
             </div>
+            <hr>
         </div>
     </header>
     <div class="container">
